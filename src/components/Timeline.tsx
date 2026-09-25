@@ -10,8 +10,17 @@ function Timeline() {
   return (
     <div id="history">
       <div className="items-container">
-        <h1>Experience</h1>
+        <h1>Experience & Education</h1>
         <VerticalTimeline>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="Graduated Aug 2026"
+            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            icon={<FontAwesomeIcon icon={faGraduationCap} />}
+          >
+            <h3 className="vertical-timeline-element-title">Bachelor of Computer Science (Honours, Co-op)</h3>
+            <h4 className="vertical-timeline-element-subtitle">University of Waterloo</h4>
+          </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
@@ -61,15 +70,6 @@ function Timeline() {
             <p>
               Built an internal web portal in HTML, CSS, and JavaScript to centralize team documentation, and supported localization and functional QA for enterprise software.
             </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            date="Graduated Aug 2026"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faGraduationCap} />}
-          >
-            <h3 className="vertical-timeline-element-title">Bachelor of Computer Science (Honours, Co-op)</h3>
-            <h4 className="vertical-timeline-element-subtitle">University of Waterloo</h4>
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>

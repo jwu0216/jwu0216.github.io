@@ -34,7 +34,7 @@ function Project() {
                                 <li><strong>DNA:</strong> worked out the angling, transformations, and camera-relative spawning logic that make the strand look like it moves endlessly toward the camera.</li>
                                 <li><strong>Leap Frog:</strong> water shader, plus forest optimization combining LOD and skybox.</li>
                                 <li><strong>Grocery Run:</strong> customized the store model, optimized with camera occlusion culling and LOD on grocery items.</li>
-                                <li><strong>Piano:</strong> weather that changes with difficulty.</li>
+                                <li><strong>Piano:</strong> the foggy flower-field skybox, plus weather that changes with difficulty.</li>
                                 <li><strong>Space Ship:</strong> improved the spaceship and asteroid models, and added warp effects that change with difficulty.</li>
                                 <li><strong>Space Dock:</strong> customized and optimized the dock model, and added a different destroy effect for each item.</li>
                             </ul>

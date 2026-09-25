@@ -23,6 +23,11 @@
     align-items: start;
 }
 
+.project.featured img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
 .project.featured h2 {
     margin-top: 0;
 }
@@ -41,6 +46,14 @@
     margin-bottom: 0.6em;
     color: white;
     font-family: "Lato", sans-serif;
+}
+
+.project.featured li ul {
+    margin-top: 0.5em;
+}
+
+.project.featured li li {
+    margin-bottom: 0.35em;
 }
 
 .light-mode .project.featured li {

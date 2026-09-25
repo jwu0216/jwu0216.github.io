@@ -10,14 +10,23 @@ function Project() {
         <h1>Projects</h1>
         <div className="projects-grid">
             <div className="project featured">
-                <a href={REFLEX_VIDEO} target="_blank" rel="noreferrer"><img src="https://img.youtube.com/vi/NchOIAa7h9A/maxresdefault.jpg" className="zoom" alt="NeuroFlex Reflex VR app video" width="100%"/></a>
+                <a href={REFLEX_VIDEO} target="_blank" rel="noreferrer"><img src="https://img.youtube.com/vi/NchOIAa7h9A/hq3.jpg" className="zoom" alt="Reflex lobby with the holographic exercise-selection UI" width="100%"/></a>
                 <div className="featured-body">
                     <a href={REFLEX_VIDEO} target="_blank" rel="noreferrer"><h2>NeuroFlex Reflex: VR Rehabilitation App</h2></a>
                     <p className="credit">VR Developer Intern, Sep 2025 – Apr 2026. The video is NeuroFlex's; below is what I built.</p>
                     <ul>
-                        <li><strong>Scene setup for most exercises:</strong> environments, effects, and performance. The most involved were Leap Frog (water shader, forest optimization combining LOD and skybox), Grocery Run (customized the store model, optimized with camera occlusion culling and LOD on grocery items), and Piano (weather that changes with difficulty).</li>
+                        <li><strong>Scene setup for most exercises:</strong> environments, effects, sound effects, and performance. The most involved:
+                            <ul>
+                                <li><strong>DNA:</strong> worked out the angling, transformations, and camera-relative spawning logic that make the strand look like it moves endlessly toward the camera.</li>
+                                <li><strong>Leap Frog:</strong> water shader, plus forest optimization combining LOD and skybox.</li>
+                                <li><strong>Grocery Run:</strong> customized the store model, optimized with camera occlusion culling and LOD on grocery items.</li>
+                                <li><strong>Piano:</strong> weather that changes with difficulty.</li>
+                                <li><strong>Space Ship:</strong> improved the spaceship and asteroid models, and added warp effects that change with difficulty.</li>
+                                <li><strong>Space Dock:</strong> customized and optimized the dock model, and added a different destroy effect for each item.</li>
+                            </ul>
+                        </li>
                         <li><strong>Visual identity:</strong> designed and built the UI throughout the app with a holographic, high-tech look, set the orange-blue color theme used everywhere, and designed the Reflex logo and built its 3D model.</li>
-                        <li><strong>Environments:</strong> built the arena in Blender and optimized it over several rounds of model tuning and graphics settings. Customized the cricket pitch, lobby, space dock, and other scenes from online 3D assets.</li>
+                        <li><strong>Environments:</strong> built the arena in Blender and optimized it over several rounds of model tuning and graphics settings. Customized the cricket pitch, lobby, and other scenes from online 3D assets.</li>
                         <li><strong>Effects:</strong> particle effects and animation for the eye-gaze objects (all exercises except Forest Fires and Get the Bullet), plus atmospheric particle effects.</li>
                         <li><strong>Tools:</strong> a scene-capture-to-skybox tool, so most static scenes render as skyboxes instead of full 3D geometry.</li>
                         <li><strong>Gameplay:</strong> helped implement gameplay across the exercises.</li>

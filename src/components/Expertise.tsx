@@ -11,6 +11,10 @@ const labelsFirst = [
     "C#",
     "C++",
     "HLSL",
+    "Blender",
+    "Substance 3D",
+    "3ds Max",
+    "Photoshop",
     "VR",
     "Path Tracing",
 ];
@@ -22,6 +26,8 @@ const labelsSecond = [
     "Stable Diffusion",
     "ControlNet",
     "LoRA",
+    "Unreal Engine 5",
+    "Substance 3D",
 ];
 
 const labelsThird = [
@@ -56,7 +62,7 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faPython} size="3x"/>
                     <h3>Artist-Facing AI Tools</h3>
-                    <p>At Infold Games I extended ComfyUI into a multi-user tool that centralized generation workflows for studio artists, built 20+ reusable generative AI workflows, and trained LoRA adapters on in-house art datasets.</p>
+                    <p>At Infold Games I extended ComfyUI into a multi-user tool that centralized generation workflows for studio artists, built 20+ reusable generative AI workflows, helped build an AI LOD plugin for Unreal Engine 5, and created plugins for the Substance 3D suite.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (

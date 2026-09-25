@@ -44,7 +44,7 @@ function Timeline() {
             <h3 className="vertical-timeline-element-title">AI Intern</h3>
             <h4 className="vertical-timeline-element-subtitle">Infold Games</h4>
             <p>
-              Extended ComfyUI into a multi-user tool for studio artists, with concurrent job queuing and GPU task scheduling. Built 20+ generative AI workflows, helped build an Unreal Engine 5 editor plugin for AI-powered LOD generation inside artists' workflows, and created plugins for the Adobe Substance 3D suite.
+              Built Substance 3D Designer and Sampler plugins that round-trip artists' work through ComfyUI, plus image-resizing tools and custom ComfyUI nodes. Helped build a UE5 editor plugin for AI-powered LOD generation, including a faster face-culling algorithm, and helped extend ComfyUI into a multi-user tool for studio artists.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement

@@ -62,7 +62,7 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faPython} size="3x"/>
                     <h3>Artist-Facing AI Tools</h3>
-                    <p>At Infold Games I extended ComfyUI into a multi-user tool that centralized generation workflows for studio artists, built 20+ reusable generative AI workflows, helped build an AI LOD plugin for Unreal Engine 5, and created plugins for the Substance 3D suite.</p>
+                    <p>At Infold Games I built Substance 3D Designer and Sampler plugins that connect artists' tools to ComfyUI, built image-resizing tools and custom ComfyUI nodes, helped build an AI LOD plugin for Unreal Engine 5, and helped extend ComfyUI into a multi-user tool for studio artists.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (

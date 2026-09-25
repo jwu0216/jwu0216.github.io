@@ -26,8 +26,8 @@ function Project() {
                         <a className="video-link" href={REFLEX_VIDEO} target="_blank" rel="noreferrer">Watch the video ↗</a>
                     </div>
                 </div>
-                {showDetails && (
-                <div className="featured-details" id="reflex-details">
+                <div className={`featured-details${showDetails ? ' open' : ''}`} id="reflex-details" aria-hidden={!showDetails}>
+                    <div className="featured-details-inner">
                     <ul>
                         <li><strong>Scene setup for most exercises:</strong> environments, effects, sound effects, and performance. The most involved:
                             <ul>
@@ -45,8 +45,8 @@ function Project() {
                         <li><strong>Tools:</strong> a scene-capture-to-skybox tool, so most static scenes render as skyboxes instead of full 3D geometry.</li>
                         <li><strong>Gameplay:</strong> helped implement gameplay across the exercises.</li>
                     </ul>
+                    </div>
                 </div>
-                )}
             </div>
             <div className="project">
                 <a href="https://github.com/jwu0216/monte-carlo-path-tracer" target="_blank" rel="noreferrer"><img src={`${MEDIA}/renders/6-teapot-glass-1024spp.png`} className="zoom" alt="Glass teapot rendered with the path tracer" width="100%" style={{ objectPosition: "center 10%" }}/></a>

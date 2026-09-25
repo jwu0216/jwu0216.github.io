@@ -1,4 +1,5 @@
 import React from "react";
+import reflexLogo from '../assets/images/reflex-logo.jpg';
 import '../assets/styles/Project.scss';
 
 const MEDIA = "https://raw.githubusercontent.com/jwu0216/monte-carlo-path-tracer/main/media";
@@ -10,9 +11,9 @@ function Project() {
         <h1>Projects</h1>
         <div className="projects-grid">
             <div className="project featured">
-                <a href={REFLEX_VIDEO} target="_blank" rel="noreferrer"><img src="https://img.youtube.com/vi/NchOIAa7h9A/hq3.jpg" className="zoom" alt="Reflex lobby with the holographic exercise-selection UI" width="100%"/></a>
+                <a href={REFLEX_VIDEO} target="_blank" rel="noreferrer"><img src={reflexLogo} className="zoom" alt="ReFlex logo, which I designed and modeled in 3D" width="100%"/></a>
                 <div className="featured-body">
-                    <a href={REFLEX_VIDEO} target="_blank" rel="noreferrer"><h2>NeuroFlex Reflex: VR Rehabilitation App</h2></a>
+                    <a href={REFLEX_VIDEO} target="_blank" rel="noreferrer"><h2>NeuroFlex ReFlex: VR Rehabilitation App</h2></a>
                     <p className="credit">VR Developer Intern, Sep 2025 – Apr 2026. The video is NeuroFlex's; below is what I built.</p>
                     <ul>
                         <li><strong>Scene setup for most exercises:</strong> environments, effects, sound effects, and performance. The most involved:
@@ -25,7 +26,7 @@ function Project() {
                                 <li><strong>Space Dock:</strong> customized and optimized the dock model, and added a different destroy effect for each item.</li>
                             </ul>
                         </li>
-                        <li><strong>Visual identity:</strong> designed and built the UI throughout the app with a holographic, high-tech look, set the orange-blue color theme used everywhere, and designed the Reflex logo and built its 3D model.</li>
+                        <li><strong>Visual identity:</strong> designed and built the UI throughout the app with a holographic, high-tech look, set the orange-blue color theme used everywhere, and designed the ReFlex logo and built its 3D model.</li>
                         <li><strong>Environments:</strong> built the arena in Blender and optimized it over several rounds of model tuning and graphics settings. Customized the cricket pitch, lobby, and other scenes from online 3D assets.</li>
                         <li><strong>Effects:</strong> particle effects and animation for the eye-gaze objects (all exercises except Forest Fires and Get the Bullet), plus atmospheric particle effects.</li>
                         <li><strong>Tools:</strong> a scene-capture-to-skybox tool, so most static scenes render as skyboxes instead of full 3D geometry.</li>

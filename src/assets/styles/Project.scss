@@ -23,7 +23,8 @@
     align-items: start;
 }
 
-.project.featured img {
+/* Every project thumbnail renders at the same 16:9 proportion. */
+.projects-container .project img {
     aspect-ratio: 16 / 9;
     object-fit: cover;
 }

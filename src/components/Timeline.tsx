@@ -68,7 +68,7 @@ function Timeline() {
             <h3 className="vertical-timeline-element-title">Localization QA Intern</h3>
             <h4 className="vertical-timeline-element-subtitle">OpenText</h4>
             <p>
-              Built an internal web portal in HTML, CSS, and JavaScript to centralize team documentation, and supported manual localization QA for enterprise software.
+              Built an internal web portal in HTML, CSS, and JavaScript to centralize team documentation, and supported localization QA for enterprise software.
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>

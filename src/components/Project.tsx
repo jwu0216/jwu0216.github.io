@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import reflexLogo from '../assets/images/reflex-logo.jpg';
 import recallThumb from '../assets/images/recall-thumb.jpg';
 import '../assets/styles/Project.scss';
@@ -7,6 +7,8 @@ const MEDIA = "https://raw.githubusercontent.com/jwu0216/monte-carlo-path-tracer
 const REFLEX_VIDEO = "https://www.youtube.com/watch?v=NchOIAa7h9A";
 
 function Project() {
+    const [showDetails, setShowDetails] = useState<boolean>(false);
+
     return(
     <div className="projects-container" id="projects">
         <h1>Projects</h1>
@@ -15,7 +17,17 @@ function Project() {
                 <a href={REFLEX_VIDEO} target="_blank" rel="noreferrer"><img src={reflexLogo} className="zoom" alt="ReFlex logo, which I designed and modeled in 3D" width="100%"/></a>
                 <div className="featured-body">
                     <a href={REFLEX_VIDEO} target="_blank" rel="noreferrer"><h2>NeuroFlex ReFlex: VR Rehabilitation App</h2></a>
-                    <p className="credit">VR Developer Intern, Sep 2025 – Apr 2026. The video is NeuroFlex's; below is what I built.</p>
+                    <p className="credit">VR Developer Intern, Sep 2025 – Apr 2026. The video is NeuroFlex's; the details list what I built.</p>
+                    <p>I set up the scenes for most of the app's 20 exercises, designed the app-wide UI and the ReFlex logo, built effects and shaders, and optimized rendering with a scene-capture-to-skybox tool.</p>
+                    <div className="featured-actions">
+                        <button type="button" className="details-toggle" aria-expanded={showDetails} aria-controls="reflex-details" onClick={() => setShowDetails(!showDetails)}>
+                            {showDetails ? 'Hide details ▴' : 'Show what I built ▾'}
+                        </button>
+                        <a className="video-link" href={REFLEX_VIDEO} target="_blank" rel="noreferrer">Watch the video ↗</a>
+                    </div>
+                </div>
+                {showDetails && (
+                <div className="featured-details" id="reflex-details">
                     <ul>
                         <li><strong>Scene setup for most exercises:</strong> environments, effects, sound effects, and performance. The most involved:
                             <ul>
@@ -34,6 +46,7 @@ function Project() {
                         <li><strong>Gameplay:</strong> helped implement gameplay across the exercises.</li>
                     </ul>
                 </div>
+                )}
             </div>
             <div className="project">
                 <a href="https://github.com/jwu0216/monte-carlo-path-tracer" target="_blank" rel="noreferrer"><img src={`${MEDIA}/renders/6-teapot-glass-1024spp.png`} className="zoom" alt="Glass teapot rendered with the path tracer" width="100%" style={{ objectPosition: "center 10%" }}/></a>

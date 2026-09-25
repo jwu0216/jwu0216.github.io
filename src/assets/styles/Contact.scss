@@ -4,6 +4,46 @@
   margin-right: 5px;
 }
 
+.contact_wrapper .email-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  padding: 12px 24px;
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  color: white;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: border-color .15s ease-in-out, background-color .15s ease-in-out, color .15s ease-in-out;
+
+  svg {
+    margin-right: 0;
+    font-size: 1.3em;
+  }
+
+  span {
+    color: inherit;
+  }
+
+  &:hover {
+    border-color: #5000ca;
+    background-color: #5000ca;
+    color: white;
+  }
+}
+
+.light-mode .contact_wrapper .email-pill {
+  border-color: rgba(13, 17, 22, 0.3);
+  color: #0d1116;
+
+  &:hover {
+    border-color: #5000ca;
+    background-color: #5000ca;
+    color: white;
+  }
+}
+
 .contact-form {
   padding-top: 20px;
 

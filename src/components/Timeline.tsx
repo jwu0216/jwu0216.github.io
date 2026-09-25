@@ -23,7 +23,7 @@ function Timeline() {
             <h3 className="vertical-timeline-element-title">VR Developer Intern</h3>
             <h4 className="vertical-timeline-element-subtitle">NeuroFlex</h4>
             <p>
-              Gameplay systems for 15+ Unity VR rehabilitation exercises with eye/head tracking. Internal Unity tools for skybox generation and UI asset optimization, custom HLSL shaders, and draw calls cut by up to 70% (static) and 20% (dynamic).
+              Gameplay systems for 20 Unity VR rehabilitation exercises with eye/head tracking. Scene setup for most exercises, the app-wide UI and color theme, custom HLSL shaders, a scene-capture-to-skybox tool, and draw calls cut by up to 70% (static) and 20% (dynamic).
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
